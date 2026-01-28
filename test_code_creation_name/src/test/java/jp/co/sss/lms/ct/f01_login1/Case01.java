@@ -41,7 +41,7 @@ public class Case01 {
 	@DisplayName("テスト01 トップページURLでアクセス")
 	void test01() {
 		//ページへの接続
-		webDriverUtils.goTo("http://localhost:8080/lms/");
+		goTo("http://localhost:8080/lms/");
 		//ページタイトル取得
 		String title = webDriver.getTitle();
 
