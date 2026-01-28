@@ -46,6 +46,8 @@ public class Case02 {
 
 		assertEquals("ログイン | LMS", title);
 
+		getEvidence(new Object() {
+		});
 	}
 
 	@Test
