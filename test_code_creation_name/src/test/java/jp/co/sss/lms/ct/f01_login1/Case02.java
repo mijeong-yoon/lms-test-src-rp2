@@ -67,6 +67,9 @@ public class Case02 {
 		password.clear();
 		password.sendKeys("StudentXZ013");
 
+		getEvidence(new Object() {
+		}, "beforeLogin");
+
 		loginBtn.click();
 
 		// エラーメッセージが表示される要素を探す
