@@ -40,12 +40,15 @@ public class Case02 {
 	@Order(1)
 	@DisplayName("テスト01 トップページURLでアクセス")
 	void test01() {
+		//ページへの接続
 		goTo("http://localhost:8080/lms/");
-
+		//ページタイトル取得
 		String title = webDriver.getTitle();
 
+		//トップページURLでアクセスするテストコード検証
 		assertEquals("ログイン | LMS", title);
 
+		//evidenceフォルダに保存
 		getEvidence(new Object() {
 		});
 	}
