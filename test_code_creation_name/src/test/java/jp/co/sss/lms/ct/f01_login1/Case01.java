@@ -11,8 +11,6 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-import jp.co.sss.lms.ct.util.WebDriverUtils;
-
 /**
  * 結合テスト ログイン機能①
  * ケース01
@@ -21,8 +19,6 @@ import jp.co.sss.lms.ct.util.WebDriverUtils;
 @TestMethodOrder(OrderAnnotation.class)
 @DisplayName("ケース01 ログイン画面への遷移")
 public class Case01 {
-
-	public static WebDriverUtils webDriverUtils;
 
 	/** 前処理 */
 	@BeforeAll
